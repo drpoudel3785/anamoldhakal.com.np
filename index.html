@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+    jQuery(document).ready(function(){
+        jQuery(function() {
+            jQuery(this).bind("contextmenu", function(event) {
+                event.preventDefault();
+                alert('No Lang')
+            });
+        });
+    });
+    </script>
     <div class="hero">
         <nav>
             <img src="images/logo.png" width="40" height="48" class="logo">
@@ -36,6 +49,5 @@
             loop: true
         })
     </script>
-    
 </body>
 </html>

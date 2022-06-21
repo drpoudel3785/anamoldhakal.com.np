@@ -1,57 +1,84 @@
 *{
-    margin: 10;
-    padding: 10;
-    font-family: sans-serif;
-    background: #0F172A;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 
-.hero{
-    background: #0F172A;
+body{
+    /* background: #0F172A; */
+    background-image: url(images/39658.jpg);
 }
 
-nav{
+.container {
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-content: space-between;
+    /* margin-left: 30px; */
+    margin-top: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-nav ul a{
+.card {
+    background: rgb(127, 142, 146);
+    width: 270px;
+    height: 400px;
+    margin: 30px; /*margin between two cards*/
+    margin-top: 30px;
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.car-1{
+    background-image: url('cloudx.png');
+}
+
+.car-2{
+    background-image: url('gui.png');
+}
+
+.car-3{
+    background-image: url('receipt.png');
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    /* background-color: black; */
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
 }
 
-nav ul a:hover{
-    color: orange;
+.card:hover{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
 }
-
-.detel{
-    margin-left: 8%;
-    margin-top: 1%;
+.logo a{
+    color: white;
+    margin-left: 87%;
 }
-
-.detel h1{
-    font-size: 50px;
-    color: #ffffff;
-    margin-bottom: 10px;
+.nav p{
+    color: #0F172A;
 }
-
-
-.detel p{
-    color: rgb(255, 255, 255);
-    line-height: 22px;
-    margin: 10px;
-}
-
-.detel a{
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
+.a{
+    color: white;
 }
